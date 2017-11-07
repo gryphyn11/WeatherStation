@@ -1,0 +1,313 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sensors
+LIBS:maxim
+LIBS:bosch
+LIBS:msp430
+LIBS:switches
+LIBS:Weather Monitor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BMC150 S3
+U 1 1 5991053E
+P 5550 3450
+F 0 "S3" H 5900 3950 60  0000 C CNN
+F 1 "BMC150" H 5100 3950 60  0000 C CNN
+F 2 "" H 5550 3450 60  0001 C CNN
+F 3 "" H 5550 3450 60  0001 C CNN
+	1    5550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C15
+U 1 1 599106CF
+P 6400 4100
+F 0 "C15" H 6410 4170 50  0000 L CNN
+F 1 "100nF" H 6410 4020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6400 4100 50  0001 C CNN
+F 3 "" H 6400 4100 50  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C16
+U 1 1 59910922
+P 6700 4100
+F 0 "C16" H 6710 4170 50  0000 L CNN
+F 1 "100nF" H 6710 4020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6700 4100 50  0001 C CNN
+F 3 "" H 6700 4100 50  0001 C CNN
+	1    6700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1950 5550 2800
+Wire Wire Line
+	6200 3150 6250 3150
+Wire Wire Line
+	6550 4300 6550 1850
+Wire Wire Line
+	6400 2050 6400 4000
+Wire Wire Line
+	6400 3350 6200 3350
+Wire Wire Line
+	6700 2400 6700 4000
+Connection ~ 6400 3350
+Wire Wire Line
+	6200 3750 6700 3750
+Connection ~ 6700 3750
+Wire Wire Line
+	6200 3550 6550 3550
+Connection ~ 6550 3550
+Wire Wire Line
+	5550 4100 5550 4300
+Wire Wire Line
+	2550 4300 6700 4300
+Wire Wire Line
+	5750 4100 5750 4300
+Connection ~ 5750 4300
+Wire Wire Line
+	6400 4200 6400 4300
+Connection ~ 6400 4300
+Connection ~ 6550 4300
+Wire Wire Line
+	6700 4300 6700 4200
+Wire Wire Line
+	4900 3350 4450 3350
+Wire Wire Line
+	4450 3350 4450 3750
+Wire Wire Line
+	4450 3750 1950 3750
+Wire Wire Line
+	4900 3550 4550 3550
+Wire Wire Line
+	4550 3550 4550 3850
+Wire Wire Line
+	4550 3850 1950 3850
+Wire Wire Line
+	4550 3950 4550 4200
+Wire Wire Line
+	1950 3950 4550 3950
+Wire Wire Line
+	4900 3750 4650 3750
+Wire Wire Line
+	4650 3750 4650 4050
+Wire Wire Line
+	4650 4050 1950 4050
+Wire Wire Line
+	2550 4150 2550 4300
+Wire Wire Line
+	1950 4150 2550 4150
+Connection ~ 5550 4300
+Wire Wire Line
+	6250 3150 6250 2550
+Wire Wire Line
+	6250 2550 4350 2550
+Wire Wire Line
+	4350 2550 4350 3650
+Wire Wire Line
+	4900 3150 4150 3150
+Wire Wire Line
+	4150 3150 4150 3450
+Wire Wire Line
+	4150 3450 1950 3450
+Wire Wire Line
+	3950 2250 6400 2250
+Wire Wire Line
+	3950 3250 3950 2250
+Wire Wire Line
+	1950 3250 3950 3250
+Wire Wire Line
+	1950 3150 3850 3150
+Wire Wire Line
+	3850 3150 3850 2400
+Wire Wire Line
+	3850 2400 6700 2400
+Wire Wire Line
+	5350 4100 5350 4200
+Wire Wire Line
+	5350 4200 4550 4200
+$Comp
+L SW_DPDT_x2 SW5
+U 2 1 59919577
+P 6100 1950
+F 0 "SW5" H 6100 2120 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 6100 1750 50  0000 C CNN
+F 2 "" H 6100 1950 50  0001 C CNN
+F 3 "" H 6100 1950 50  0001 C CNN
+	2    6100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2800 5750 1850
+Wire Wire Line
+	6550 1850 6300 1850
+Wire Wire Line
+	5550 1950 5900 1950
+Wire Wire Line
+	6300 2050 6400 2050
+Connection ~ 6400 2250
+Wire Wire Line
+	4800 1950 4800 2250
+Connection ~ 4800 2250
+Wire Wire Line
+	5750 1850 5450 1850
+$Comp
+L SW_DPDT_x2 SW5
+U 1 1 5991953C
+P 5250 1850
+F 0 "SW5" H 5250 2020 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 5250 1650 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2700 4250 2700
+Wire Wire Line
+	4250 2700 4250 3550
+Wire Wire Line
+	4250 3550 1950 3550
+Wire Wire Line
+	5350 2700 5350 2800
+Wire Wire Line
+	5050 1950 4800 1950
+Wire Wire Line
+	5050 1750 4050 1750
+Wire Wire Line
+	4050 1750 4050 3350
+$Comp
+L CONN_01X11 J3
+U 1 1 5991CC25
+P 1750 3650
+F 0 "J3" H 1750 4250 50  0000 C CNN
+F 1 "CONN_01X11" V 1850 3650 50  0000 C CNN
+F 2 "" H 1750 3650 50  0001 C CNN
+F 3 "" H 1750 3650 50  0001 C CNN
+	1    1750 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3650 1950 3650
+Wire Wire Line
+	4050 3350 1950 3350
+Text HLabel 1700 1800 0    60   Input ~ 0
+SDO
+Text HLabel 1700 2100 0    60   Input ~ 0
+INT1
+Text HLabel 1700 2200 0    60   Input ~ 0
+INT2
+Text HLabel 1700 2400 0    60   Input ~ 0
+DRDY
+Text HLabel 1700 2300 0    60   Input ~ 0
+INT3
+Text HLabel 1700 2500 0    60   Input ~ 0
+GND
+Text HLabel 1700 1900 0    60   Input ~ 0
+SDI
+Text HLabel 1700 1700 0    60   Input ~ 0
+CSB
+Text HLabel 1700 2000 0    60   Input ~ 0
+SCK
+Text HLabel 1700 1600 0    60   Input ~ 0
+VDDIO
+Connection ~ 2100 4150
+Wire Wire Line
+	1700 2500 2100 2500
+Wire Wire Line
+	2100 2500 2100 4150
+Wire Wire Line
+	2150 4050 2150 2400
+Wire Wire Line
+	2150 2400 1700 2400
+Connection ~ 2150 4050
+Wire Wire Line
+	1700 2300 2200 2300
+Wire Wire Line
+	2200 2300 2200 3950
+Connection ~ 2200 3950
+Wire Wire Line
+	1700 2200 2250 2200
+Wire Wire Line
+	2250 2200 2250 3850
+Connection ~ 2250 3850
+Wire Wire Line
+	1700 2100 2300 2100
+Wire Wire Line
+	2300 2100 2300 3750
+Connection ~ 2300 3750
+Wire Wire Line
+	1700 2000 2350 2000
+Wire Wire Line
+	2350 2000 2350 3650
+Connection ~ 2350 3650
+Wire Wire Line
+	1700 1900 2400 1900
+Wire Wire Line
+	2400 1900 2400 3550
+Connection ~ 2400 3550
+Wire Wire Line
+	1700 1800 2450 1800
+Wire Wire Line
+	2450 1800 2450 3450
+Connection ~ 2450 3450
+Wire Wire Line
+	1700 1700 2500 1700
+Wire Wire Line
+	2500 1700 2500 3350
+Connection ~ 2500 3350
+Text HLabel 1700 1500 0    60   Input ~ 0
+VDD
+Wire Wire Line
+	1700 1600 2550 1600
+Wire Wire Line
+	2550 1600 2550 3250
+Connection ~ 2550 3250
+Wire Wire Line
+	2600 3150 2600 1500
+Wire Wire Line
+	2600 1500 1700 1500
+Connection ~ 2600 3150
+$EndSCHEMATC
